@@ -1,0 +1,45 @@
+:root {
+    --centerIt: 600px;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+canvas {
+    background: #eee;
+    display: block;
+    margin: 0 auto;
+    border: 10px solid blue
+}
+
+#instruction {
+    position: fixed;
+    padding: 10px;
+    height: 350px;
+    width: 400px;
+    color: solid skyblue;
+    text-align: center;
+    font: 38px/54px Helvetica, Arial, sans-serif;
+    background-color: lightblue;
+    border: 10px solid black;
+    border-radius: 10px;
+    top: +80px;
+    left: -422px;
+    z-index: 1;
+    transition: all 0.10s;
+    margin: 0px;
+}
+
+.shiftIn {
+    transform: translateX(var(--centerIt));
+}
